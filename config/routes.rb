@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  root to: 'home#index'
+  root to: 'chats#index'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'auth', to: 'auth#index'
+  post 'auth/login', to: 'auth#login'
+
+  resources :messages
+  resources :users
+  # root to: 'home#index'
 end

@@ -1,0 +1,22 @@
+<div class="center jumbotron" align="center">
+	<%= form_tag(auth_login_path, method: :post) do %>
+		<div class="container">
+			<div class="row">
+				<div class="form-group">
+					<h2>用户名</h2>
+			    <input class="form-control input-lg" placeholder="用户名" name="user[name]" id="user_login" />
+			  </div>
+		  </div>
+
+		  <div class="row">
+		  	<div class="form-actions">
+		      <input type="submit" name="commit" value="登录" class="btn btn-primary btn-lg btn-block" data-disable-with	="正在登录" />
+		  		</div>
+		  	</div>
+			</div>
+			<div class="row">
+				<%= flash[:notice] %>
+			</div>
+		</div>
+	<% end %>
+</div>

@@ -11,6 +11,7 @@ gem 'pghero'
 gem 'redis'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
+gem 'puma'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

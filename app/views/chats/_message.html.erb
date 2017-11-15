@@ -1,0 +1,9 @@
+<% if send_flag %>
+	<div class="row">
+		<h3 style="float: right;color: #8C8C8C"><%= msg.content + '——' + msg.sender %></h3>
+	</div>
+<% else %>
+	<div class="row">
+		<h3 style="float: left;"><%= msg.sender + '——' + msg.content %></h3>
+	</div>
+<% end %>
